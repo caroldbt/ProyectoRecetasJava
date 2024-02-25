@@ -1,0 +1,27 @@
+<nav class="navbar fixed-top " style="background:#3C883E;font-family:'serif'">
+	<div class="container-fluid">
+	<a href="ControladorProductos"data-toggle="tooltip" title="Pulsa aqui para comenzar">
+		 <img src="./logo/logo.png" class="img-responsive" alt="Imagen de ejemplo" width="70rem" heigth="40rem">
+		 </a>
+		 
+		
+		<h1 class="navbar-brand text-white">BIENVENIDO A TU CREADOR DE RECETAS</h1>
+		<a href="ControladorProductos"  class="btn btn-outline-dark text-white">Crear Receta
+		&nbsp;&nbsp;</a>
+		<a href="filtros.jsp" class="btn btn-outline-dark text-white">Buscador&nbsp;&nbsp;
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+		  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+		</svg></a>
+		<a href="http://localhost:8080/ProyectoRecetas/" onclick="signOut();" data-toggle="tooltip" title="Pulsa para salir" class="btn btn-outline-dark text-white">Salir</a>
+		
+		<script>
+		  function signOut() {
+		    var auth2 = gapi.auth2.getAuthInstance();
+		    auth2.signOut().then(function () {
+		      console.log('User signed out.');
+		    });
+		    google.accounts.id.disableAutoSelect();
+		  }
+		</script>
+	</div>
+</nav>
