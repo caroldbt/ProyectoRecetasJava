@@ -4,7 +4,7 @@ Breve descripción del proyecto y su propósito.
 
 ## Tecnologías Utilizadas
 
-- Java
+- Java (MVC)
 - JSP (JavaServer Pages)
 - SQL con motor de bases de datos MySQL
 - Servlets
